@@ -67,9 +67,12 @@ The method builds on a completed recreation of the ETH Zürich MSc thesis
 [`gridfm-thesis-recreation`](https://github.com/panas-bhattarai/gridfm-thesis-recreation)
 — masked-reconstruction pre-training with a power-balance loss, where the
 topology-aware architecture (GPSConv + admittance-weighted RWPE) proved to govern
-topology transfer. A companion study extending that result to reconfigurable
-distribution feeders will be released separately. This repository takes the third
-step: from *reconstructing* grid states to *generating* them.
+topology transfer. The companion study
+[`feeder-reconfiguration-invariance`](https://github.com/panas-bhattarai/feeder-reconfiguration-invariance)
+extends that result to reconfigurable distribution feeders (fine-tuned topology-aware
+models solve power flow at 2–8% voltage error on unseen feeders, flat across switching
+states). This repository takes the third step: from *reconstructing* grid states to
+*generating* them.
 
 ## Reproducing
 
