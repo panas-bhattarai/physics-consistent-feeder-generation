@@ -1,0 +1,18 @@
+# data regenerates deterministically (seeded; profiles are the scenario sequence)
+data/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# intermediate checkpoints (final/named checkpoints ARE committed)
+checkpoints/*
+!checkpoints/*_best.pt
+!checkpoints/timepca_k16.npz
+!checkpoints/dayspace_*.npz
+
+# OS noise
+Thumbs.db
+desktop.ini

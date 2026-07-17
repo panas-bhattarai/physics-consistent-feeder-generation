@@ -1,0 +1,10 @@
+# Verified working set, M0 (2026-07-16), Python 3.11.9, Windows 10, RTX 3050 Laptop (4 GB)
+# torch installed from https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+torch_geometric==2.8.0
+pandapower==3.5.4
+simbench==1.6.2
+numba==0.66.0
+numpy==2.4.6
+pandas==2.3.3
+matplotlib==3.11.0

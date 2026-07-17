@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "physics-consistent-feeder-generation: generative models of distribution-feeder operating data with power-flow guarantees"
+authors:
+  - family-names: Bhattarai
+    given-names: Panas
+year: 2026
+url: "https://github.com/panas-bhattarai/physics-consistent-feeder-generation"
+license: MIT
