@@ -1,0 +1,4 @@
+feeder,reverse_flow_pct,vm_min,vm_max,peak_import_MW,peak_export_MW,peak_total_load_MW,peak_total_DER_MW
+rural0,55.6,1.0063,1.0621,6.37,13.57,7.51,18.41
+semiurb0,33.1,1.0023,1.0564,12.18,10.59,13.4,16.56
+comm0,14.5,1.0062,1.0561,13.46,6.52,14.94,12.15
