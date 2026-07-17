@@ -17,6 +17,12 @@ at every bus — and are graded on three axes at once:
 - **diversity** — across-sample variability, added after milestone 3 caught a
   failure mode that pooled statistics cannot see.
 
+![One year of feeder operation: grid import vs wind-driven reverse flow](results/m1/fig01_year_heatmap.png)
+*The data being modeled: one year × one day of feeder-head power on the three feeders.
+Red = reverse flow (DER exceeds load) — wind-driven day-long stripes and pre-dawn bands,
+15–56% of the year. Every generated day is graded against the statistics and physics of
+this dataset (105,408 solved AC power flows, residual ≤ 8e-8 MVA).*
+
 ## The eight findings
 
 | # | Claim | Evidence |
@@ -29,6 +35,18 @@ at every bus — and are graded on three axes at once:
 | 6 | One feeder-year of day-scores is statistically Gaussian | trained flows tie the Gaussian in validation likelihood and trail it on physical metrics; deep generative capacity needs the many-feeder regime (04) |
 | 7 | Conditioning = pseudo-measurement generation, exact and calibrated | 8 metered buses → 87 unmetered with closed-form posteriors: MAE 26–91% below climatology, 90%-band coverage 85–92% after modeling representation error (04) |
 | 8 | Transfer needs weeks, not years — and seasons do not transfer implicitly | floor physics from 7 days of target data (vs 84.8 MVA zero-shot); statistics mature at 30–60 days; cross-feeder weights do **not** carry seasonal structure — exogenous weather/calendar covariates are required (05) |
+
+![Physics ablation: feasibility vs fidelity](results/m3/fig10_money.png)
+*The central experiment (findings 3–5). Each point is a trained generator: the physics
+penalty (λ) moves the flow an order of magnitude left at visible fidelity cost — while
+the day-subspace Gaussian (violet diamond) sits at the representation floor with no
+penalty at all. Physics belongs in the representation, not the loss.*
+
+![Pseudo-measurement generation with calibrated uncertainty](results/m4/fig14_conditional_day.png)
+*Finding 7 in action: 8 metered buses (of 95) pin the whole feeder. Blue = withheld
+truth, green = posterior mean and 90% band, dashed = climatology. The intra-day voltage
+dips are recovered at buses that were never metered — network coupling doing
+informational work, with bands that are tested (85–92% empirical coverage), not drawn.*
 
 ## Reading order
 
