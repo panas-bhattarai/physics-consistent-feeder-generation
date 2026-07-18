@@ -1,7 +1,7 @@
 """Admittance-weighted random-walk positional encoding (RWPE), GridFM v0.2.
 
 Reused verbatim (in spirit) from the thesis-recreation evidence base
-(github.com/panas-bhattarai/gridfm-thesis-recreation, gridfm/encoding.py; thesis Sec. 2.4.1 & 3.2.4).
+(github.com/panas-bhattarai/gridfm-thesis-recreation, gridfm/encoding.py; 
 This is the structural "fingerprint" whose invariance under distribution-feeder
 reconfiguration later notebooks probe.
 
