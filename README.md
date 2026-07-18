@@ -89,3 +89,8 @@ experiment); evaluation: `gridfm/eval_m3.py` and the notebooks.
 
 MIT (code). SimBench data remains under its own license and is fetched at runtime
 by the `simbench` package.
+
+## AI-assisted development
+
+This recreation was carried out with substantial assistance from an AI coding assistant,
+under the direction and review of the author.
