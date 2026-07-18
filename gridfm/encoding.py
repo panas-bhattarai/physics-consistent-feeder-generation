@@ -46,7 +46,7 @@ def rwpe(edge_index, edge_attr, num_nodes, k=K_STEPS, lazy=0.0):
 
     Column t is diag(M^t): the t-step return probability of the admittance-
     weighted walk. Column 0 is identically zero on shunt-free graphs (no self-loop
-    to stay put) -- kept anyway to match the thesis formula.
+    to stay put) -- kept anyway
 
     `lazy` in (0,1): use a lazy walk M' = (1-lazy)*M + lazy*I. On a bipartite
     (tree) graph the plain walk (lazy=0) can only return on EVEN steps, so odd
